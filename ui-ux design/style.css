@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffff;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+header{
+    top: 0;
+    /* position: fixed; */
+    margin-top: 30px;
+}
+
+/* STYLING THE NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.navbar .logo{
+    padding-left: 90px;
+}
+/* focused on the links */
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+.navbar .links a{
+    text-decoration: none;
+    color: black;
+}
+/* focused on the search input */
+.search{
+    display: flex;
+    gap: -5px;
+}
+input{
+    height: 25px;
+    outline: none;
+}
+button{
+    height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #3F83FE;
+    color: white;
+    outline: none;
+    border: none;
+}
+.navbar .search{
+    padding-right: 90px;
+}
+/* END OF HEADER STYLING */
+
+
+/* HERO SECTION */
