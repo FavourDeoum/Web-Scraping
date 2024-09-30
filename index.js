@@ -62,7 +62,7 @@ async function getHouseData(url, searchQuery, outputData) {
         console.log(linkCount);
 
 
-        // conert JSON into string
+        // convert JSON into string
         const save = await JSON.stringify(dataToBeSave);
 
         // write Extracted DatatobeSave to the file
