@@ -1,6 +1,6 @@
 # Real Estate Project
 ## Overview
-This Project aims to develop a **Real Estate Management System** that provides users with the ability to search, list and manage properties efficiently. The system is designed to meet the needs of real estate agents agents, buyers, sellers and property managers by offering a platform for listing properties and streamlining real estate transactions.
+This Project aims to develop a **Real Estate Management System** that provides users with the ability to search, list and manage properties efficiently. The system is designed to meet the needs of real estate agents, buyers, sellers and property managers by offering a platform for listing properties and streamlining real estate transactions.
 
 ## Features
 - Property listing with details such as price, location, size and features.

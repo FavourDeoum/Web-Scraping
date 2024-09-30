@@ -5,23 +5,25 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 header{
     top: 0;
-    /* position: fixed; */
     margin-top: 30px;
 }
 
 /* STYLING THE NAVBAR */
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 40px;
 }
 .navbar .logo{
     padding-left: 90px;
+    color: #FFD700;
+    font-weight: bolder;
 }
 /* focused on the links */
 .navbar .links{
@@ -35,23 +37,34 @@ header{
     text-decoration: none;
     color: black;
 }
-/* focused on the search input */
-.search{
-    display: flex;
-    gap: -5px;
+
+.sign a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
-input{
-    height: 25px;
-    outline: none;
-}
-button{
-    height: 30px;
+.sign button{
+    width: 95px;
+    height: 35px;
     font-size: 12px;
     cursor: pointer;
     background-color: #3F83FE;
     color: white;
     outline: none;
     border: none;
+}
+button{
+    width: 95px;
+    height: 35px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #3F83FE;
+    color: white;
+    outline: none;
+    border: none;
+}
+button:hover{
+    background-color: #0056b3;
 }
 .navbar .search{
     padding-right: 90px;
@@ -60,13 +73,17 @@ button{
 
 
 /* HERO SECTION */
+.herosec{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFC;
+}
 .hero{
     width: 100vw;
     height: 800px;
     display: flex;
     margin-top: 50px;
     gap: 50px;
-    background-color: #FAFAFC;
     padding: 30px;
 }
 .lefthero{
@@ -95,12 +112,12 @@ p{
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     max-width: 800px;
-    height: 70px;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -108,13 +125,11 @@ p{
 .search-options {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .search-options button {
     background-color: #f0f0f0;
     border: none;
-    padding: 12px 30px;
     font-size: 14px;
     font-weight: 500px;
     color: #666;
@@ -140,16 +155,16 @@ p{
     gap: 0; /* No gap between inputs */
     width: 100%;
     max-width: 800px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
 .search-fields input {
     flex: 1;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ccc;
+    outline: none;
     border-right: none; /* Remove right border for better fit */
-    border-radius: 8px 0 0 8px; /* Round only the left corners */
     font-size: 14px;
     color: #333;
 }
@@ -159,18 +174,23 @@ p{
 }
 
 .search-btn {
-    padding: 12px 40px;
+    /* padding: 12px 40px; */
     background-color: #0066ff;
     color: white;
     border: none;
-    border-radius: 0 8px 8px 0; /* Round only the right corners */
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .stats {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -186,18 +206,22 @@ p{
 }
 
 .stat-item h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #0066ff;
     margin-bottom: 5px;
 }
 
 .stat-item p {
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
 }
 
 
 /* SECOND SECTION */
+.sec-sec{
+    width: 100%;
+    height: 100vh;
+}
 .second{
     width: 100vw;
     display: flex;
@@ -249,6 +273,11 @@ p{
 
 
 /* THIRD SECTION */
+.thir-sec{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 100px;
+}
 .third{
     width: 100vw;
     display: flex;
@@ -267,54 +296,74 @@ p{
     font-size: 14px;
     margin-bottom: 40px;
 }
-.card{
+.downthird{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
 }
-.property-card{
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
+.card{
     width: 300px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0 ,0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0 ,0.1);
+    background-color: #fff;
+    margin: 20px;
+    font-size: 12px;
     transition: transform 0.3s ease;
 }
-.property-card:hover{
-    transform: translateY(-10px);
+.card:hover{
+    transform: translateY(-20px);
+
 }
-.property-card img{
+.card img{
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-.property-card h5{
-    font-size: 1.2rem;
-    margin: 15px 0;
+.card-body{
+    padding: 15px;
 }
-.property-card p{
-    font-size: 11px;
-    margin-bottom: 20px;
+.card-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-.property-info{
+.card-description{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.property-details{
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
-    font-size: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.card button{
-    background-color: #3F83FE;
-    color: white;
-    border: none;
+.property-details div{
+    text-align: center;
+}
+.property-details img{
+    display: block;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.bot{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    display: block;
+    width: 50%;
+    text-align: center;
     padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    font-size: 14px;
+    background-color: #3F83FE;
+    color: #fff;
+    text-decoration: none;
 }
-.card button:hover{
+.btn:hover{
     background-color: #0056b3;
 }
 
@@ -322,7 +371,7 @@ p{
 /* FOURTH SECTION */
 .four{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 50px;
     background-color: #fff;
@@ -330,10 +379,10 @@ p{
     margin: auto;
 }
 .leftfourth{
-    width: 45%;
+    width: 28%;
 }
-.leftfourth h4{
-    font-size: 2rem;
+.leftfourth h3{
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 .leftfourth p{
@@ -346,24 +395,24 @@ p{
     background-color: #3F83FE;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 11px;
 }
 .cta-button:hover{
     background-color: #0056b3;
 }
 .rightfourth{
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .main-image{
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
     border-radius: 8px;
 }
 .sec-image{
     position: absolute;
-    width: 60%;
+    width: 50%;
     height: auto;
     bottom: -20px;
     right: -40px;
